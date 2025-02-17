@@ -2,9 +2,322 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>Title</title>
 </head>
+<style>
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+</style>
 <body>
+
+
+<!-- Velog 참고 : https://velog.io/@dkzh506/HTML-%EA%B8%B0%EB%B3%B8-%EC%A0%95%EB%A6%AC-->
+
+
+
+<!--hn 태그 -->
+<h1>Heading level</h1>
+<h2>Heading level</h2>
+<h3>Heading level</h3>
+<h4>Heading level</h4>
+<h5>Heading level</h5>
+<h6>Heading level</h6>
+
+<!--p 태그-->
+<p>하나의 문단을 작성할 때 p 태그를 사용합니다.</p>
+
+
+<!--br 태그 : 줄 바꿀 때 사용-->
+<p>
+    안녕하세요 <br>
+    코딩 공부하기 좋은날 입니다.
+</p>
+
+
+<!--blockquote 태그 : 출저에서 인용한 문단 단위의 텍스트를 작성할 때 사용 -> 반드시 1개 이상의 p태그 사용-->
+<blockquote cite="출저 url">
+    <p>문단 단위 인용문</p>
+</blockquote>
+
+
+<!--q 태그 : 짧은 인용문을 작성할 때 사용-->
+<q cite="출저 url">짧은 인용문</q>
+
+
+<!--ins , del 태그 : 밑줄, 취소선을 긋는 태그-->
+<p>세일 기간 동안 가격을 <del>30000(원)</del>에서 <ins>19900(원)</ins>으로 판매합니다.</p>
+
+
+
+<!--div 태그 : 블록요소, 인라인 요소를 그룹으로 묶을 때 사용-->
+<div>
+    <p>프로그램 소개</p>
+    <p>프로그림을 소개하는 페이지입니다.</p>
+</div>
+
+<!--span 태그 : 인라인 요소를 그룹으로 묶을 때 사용합니다.-->
+<p>이번영화의 <span>하이라이트</span> 장면은 바로 여깁니다.</p>
+
+
+<!-- ul 태그 : 순서가 없는 비순서형 목록 -->
+<!-- ol 태그 : 순서가 있는 순서형 목록-->
+<!-- li 태그 : 목록의 내용을 표현하는 태그-->
+<ul>
+    <li>목록1</li>
+    <li>목록2</li>
+    <li>목록3</li>
+</ul>
+
+<ol>
+    <li>목록1</li>
+    <li>목록2</li>
+    <li>목록3</li>
+</ol>
+
+<!--dl 태그 : 정의형 목록 -->
+<!--dt 태그 : 용어-->
+<!--dd 태그 : 용어 설명-->
+
+<dl>
+    <dt>HTML</dt>
+    <dd>HTML 란 웹 문서의 구조를 설계한기 위한 목적으로 개발된 언어입니다.</dd>
+
+    <dt>CSS</dt>
+    <dd>CSS 란 웹 문서를 꾸미기 위한 목적으로 개발된 언어입니다. </dd>
+</dl>
+
+
+<!-- a 태그 : HTML  내부, 외부 링크를 생성 -->
+<!-- href 속성 : 경로를 의미함 , 명확하지 않을 때 #을 사용-->
+<!-- target : 링크 연결 방식-->
+<a href="https://www.naver.com/">네이버</a>
+
+
+<!-- img 태그 : 이미지 객체를 삽입할 때 사용-->
+<!-- src 속성 : 이미지 객체를 가지고 오는 경로 -->
+<!-- 현재 폴더 : ./-->
+<!-- 상위 폴더 :  ../ -->
+<!-- alt 속성 : 이미지 객체를 설명-->
+
+<img src="../../img/flowers-6803234_640.png" alt="이미지 예시">
+
+
+<!-- video 태그-->
+<!-- audio 태그-->
+<!-- controls 속성 : 웹 브라우저에 노출되도록 하는 속성-->
+
+<!-- source 태그 : 비디오, 오디오 태그의 경로와 미디어 타입을 명시하는 태그-->
+<!-- src 속성 : 경로-->
+<!-- type 속성 : 미디어 타입을 명시-->
+
+
+<video controls>
+    <source src="../../video,audio/253436_tiny.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+    <source src="../../video,audio/vlog-music-beat-trailer-showreel-promo-background-intro-theme-274290.mp3" type="audio/mp3">
+</audio>
+
+
+
+<!-- strong 태그 : 텍스트 의미를 강조(굵게)-->
+<!-- em 태그 : 텍스트 의미를 강조 (기울어서)-->
+<p>이 시설은 <strong>관리자 외 출입금지 </strong>입니다</p>
+<p>이 시설은 <em>관리자 외 출입금지 </em>입니다.</p>
+
+
+<!--form 태그 : 사용자와 상호작용해서 정보를 입력받고 서버로 전송하기 위한 양식 -->
+<!-- action 속성 : 사용자와 상호작용으로 입력 받은 값들을 전송할 서버의 url 주소-->
+<!-- method 속성 : 전송할 방법 (get,post)-->
+
+<!-- 상호 작용 요소 : input, textarea, select, button, label 등-->
+
+<!-- fieldset 태그 : 그룹-->
+<!-- legend 태그 : 그룹 이름-->
+
+<!-- input 태그 : 사용자에게 입력 받는 요소를 생성하는 태그 -->
+<!-- type 속성 : 입력 받을 요소의 종류를 표현하는 속성-->
+<!-- name 속성 : 서버로 전송될 때 이름-->
+<!-- value 속성 : 입력 요소의 초깃값, 폼이 제출 될 때 기본값-->
+
+<!-- label 태그 : 상호작용 요소에 이름을 붙일 때 사용 -->
+<!-- label 태그 사용시 for 속성값과 상호작용요소의 아이디 값이 반드시 같아야함 -->
+
+
+
+
+<!-- textarea 태그 : 여러줄의 입력요소-->
+<!-- cols, rows : 한줄에 몇 자까지, 몇 줄까지 -->
+
+
+
+
+<!-- select 태그 : 콤보박스(드롭다운) 생성-->
+<!-- size 속성 : 콤보박스 화면에 노출 되는 항목 개수 조정-->
+<!-- multiple 속성 :  콤보박스 다중 선택 가능-->
+
+<!-- option 태그 : 항목 생성-->
+<!-- selected : 기본값으로 선택-->
+
+<!-- optgroup 태그 : 그룹 생성-->
+<!-- label 속성 : 그룹 이름-->
+
+
+
+<!-- button 태그 : 버튼을 만드는 요소 -->
+<!-- type 속성 : 버튼의 종류 -> 서버 제출 submit, 그냥 버튼 button, 입력요소의 내용 초기화는 reset-->
+
+
+<!-- 그 외 폼 태그에서 사용할 수 있는 속성-->
+<!-- disabled : 상호작용 요소 비활성화 -->
+<!-- readonly : 상호작용 요소 읽기 전용으로 변경-->
+<!-- maxlength : 입력할 수 있는 글자 제한-->
+<!-- checked :  요소를 선택된 상태로 변경 (checkbox,radio)에서만 사용-->
+<!-- placeholder : 입력 요소의 힌트를 적는 용도로 사용-->
+
+
+<form action="#">
+    <fieldset>
+        <legend>그룹 1번</legend>
+        <input type="text" name="userName" value="Lee">
+        <textarea cols="10" rows="1"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>그룹 2번</legend>
+        <label for="aa">체크박스</label>
+        <input type="checkbox" id="aa">
+
+        <select>
+            <optgroup label="구청">
+                <option>중구</option>
+                <option>동구</option>
+                <option>북구</option>
+                <option selected>남구</option>
+                <option>서구</option>
+            </optgroup>
+
+            <optgroup label="지역">
+                <option>서울</option>
+                <option>부산</option>
+                <option>제주</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>그룹 3번</legend>
+        <input type="radio">
+        <button type="button">버튼</button>
+    </fieldset>
+</form>
+
+
+<!-- table은 css를 적용하지 않으면 눈에 보이지 않음 -> 여기에서는 내부 스타일 시트 활용-->
+
+<!-- table 태그 : 표를 만드는 태그 -->
+<!-- caption 태그 : 표의 제목-->
+
+<!-- tr 태그 : 표의 행-->
+<!-- th 태그 : 제목을 나타내는 열-->
+<!-- td 태그 : 내용을 나타내는 열-->
+
+<!-- colspan : 열 병합-->
+<!-- rowspan : 행 병합-->
+
+
+<table>
+    <caption>표 1번</caption>
+    <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1500원</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td rowspan="2">1000원</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+    </tr>
+
+    <tr>
+        <td>총 금액</td>
+        <td colspan="3">6500원</td>
+    </tr>
+</table>
+
+
+<!-- 표 그룹화 : thead, tfoot tbody 사용 (순서 중요)-->
+
+<table>
+    <caption>표 2번</caption>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+    </tr>
+    </thead>
+
+    <tfoot>
+    <tr>
+        <td>총 금액</td>
+        <td colspan="3">6500원</td>
+    </tr>
+    </tfoot>
+
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1500원</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td rowspan="2">1000원</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!---->
+
 
 </body>
 </html>
