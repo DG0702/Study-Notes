@@ -1,0 +1,170 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background</title>
+    <style>
+        body{
+            font-weight: bold;
+            color: white;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 50px;
+        }
+
+        .box2 {
+            width: 160px;
+            height: 120px;
+            background-image: url("../../img/flowers-6803234_640.png");
+            margin-bottom: 50px;
+        }
+
+        .box3{
+            color: black;
+            width: 300px;
+            height: 300px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .box4{
+            width: 300px;
+            height: 300px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            margin-bottom: 20px;
+        }
+
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-repeat: round;
+            margin-bottom: 50px;
+        }
+
+        .box6{
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .box7{
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+
+        .box8{
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 10px;
+        }
+
+        .box9{
+            width: 320px;
+            height: 240px;
+            border: 1px solid black;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-repeat: no-repeat;
+            background-position: 10% 40%;
+            margin-bottom: 50px;
+        }
+
+        .box10{
+            width: 320px;
+            height: 240px;
+            border: 1px solid black;
+            overflow: scroll;
+            margin-bottom: 50px;
+        }
+
+        .box11{
+            width: 200px;
+            height: 500px;
+            background-image: url("../../img/night-3078326_180.jpg");
+            background-attachment: scroll;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red-box{
+            background-color: red;
+        }
+
+        .green-box{
+            background-color: green;
+            position: relative;
+            left: 100px;
+        }
+
+        .blue-box{
+            background-color: blue;
+            margin-bottom: 50px;
+        }
+
+
+        /*.orange-box{*/
+        /*    background-color: orange;*/
+        /*    position: relative;*/
+        /*    z-index: 10;*/
+        /*}*/
+
+        /*.purple-box{*/
+        /*    width: 90px;*/
+        /*    height: 90px;*/
+        /*    background-color: purple;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+<!-- div 태그 생성-->
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3">background-repeat : no-repeat</div>
+<div class="box4">background-repeat : repeat(기본값) </div>
+<div class="box5">background-repeat : round</div>
+<div class="box6">background-size : auto</div>
+<div class="box7">background-size : cover</div>
+<div class="box8">background-size : contain</div>
+<div class="box9">background-position</div>
+<div class="box10">
+    background-attachment
+    <div class="box11"></div>
+</div>
+
+<div class="box red-box"></div>
+<div class="box green-box"></div>
+<div class="box blue-box"></div>
+
+<!-- z index 간단하게 확인하기 위해서는 제일 위에서 확인해야한다-->
+<!--<div class="box orange-box"></div>-->
+<!--<div class="box purple-box"></div>-->
+
+
+
+</body>
+</html>
