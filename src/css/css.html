@@ -137,6 +137,57 @@
         /*    top: 0;*/
         /*    left: 0;*/
         /*}*/
+
+        img{
+            float: left;
+            margin-right: 1rem;
+        }
+
+        .clear{
+            clear: left;
+            margin-bottom: 10px;
+        }
+
+        .orange-box{
+            background-color: orange;
+            margin: 20px;
+        }
+
+        .orange-box:hover{
+            background-color: purple;
+        }
+
+        .container .bar {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 5s;
+            margin: 5px;
+        }
+
+        .container:hover .bar{
+            width: 200px;
+        }
+
+
+        .bar:nth-child(1){
+            transition-timing-function: linear;
+        }
+        .bar:nth-child(2){
+            transition-timing-function: ease;
+        }
+        .bar:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+        .bar:nth-child(4){
+            transition-timing-function: ease-in-out;
+        }
+        .bar:nth-child(5){
+            transition-timing-function: ease-out;
+        }
+
+
     </style>
 </head>
 <body>
@@ -164,6 +215,26 @@
 <!--<div class="box orange-box"></div>-->
 <!--<div class="box purple-box"></div>-->
 
+<img src="../../img/night-3078326_180.jpg" alt="이미지">
+<p style="color: black">
+    lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consecteturlorem ipsum dolor sit amet consecteturlorem ipsum dolor sit amet consecteturlorem ipsum dolor sit amet consecteturlorem ipsum dolor sit amet consecteturlorem ipsum dolor sit amet consecteturlorem ipsum dolor sit amet consectetur
+</p>
+
+<div class="clear"></div>
+
+
+<!--전환-->
+
+<div class="box orange-box"></div>
+
+<div class="container">
+    <div class="bar">linear</div>
+    <div class="bar">ease</div>
+    <div class="bar">ease-in</div>
+    <div class="bar">ease-in-out</div>
+    <div class="bar">ease-out</div>
+    <div class="bar">normal</div>
+</div>
 
 
 </body>
