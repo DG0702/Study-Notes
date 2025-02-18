@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: bgchange;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+            animation-play-state: running;
+            animation-direction: normal;
+        }
+        
+        @keyframes bgchange{
+            0%{background-color: red}
+            100%{background-color: blue}
+
+            from{left: 0}
+            to{left: 300px}
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
