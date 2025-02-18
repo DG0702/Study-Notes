@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+    <style>
+        .orange-box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: 20px;
+        }
+
+        .orange-box:hover{
+            background-color: purple;
+        }
+
+        .container .bar {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 5s;
+            margin: 5px;
+        }
+
+        .container:hover .bar{
+            width: 200px;
+        }
+
+
+        .bar:nth-child(1){
+            transition-timing-function: linear;
+        }
+        .bar:nth-child(2){
+            transition-timing-function: ease;
+        }
+        .bar:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+        .bar:nth-child(4){
+            transition-timing-function: ease-in-out;
+        }
+        .bar:nth-child(5){
+            transition-timing-function: ease-out;
+        }
+    </style>
+</head>
+<body>
+<!--전환-->
+
+<div class="box orange-box"></div>
+
+<div class="container">
+    <div class="bar">linear</div>
+    <div class="bar">ease</div>
+    <div class="bar">ease-in</div>
+    <div class="bar">ease-in-out</div>
+    <div class="bar">ease-out</div>
+    <div class="bar">normal</div>
+</div>
+
+</body>
+</html>
