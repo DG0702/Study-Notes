@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>flexbox</title>
     <style>
+
+        /*flex-container 주요 속성들 */
+
         .flex-container{
             width: 300px;
             height: 200px;
@@ -156,6 +159,145 @@
         .flex-item6:nth-child(2n){
             background-color: darkseagreen;
         }
+
+        /*flex-item 주요 속성들*/
+
+        /*flex-grow 속성*/
+        .flex-container7{
+            width: 300px;
+            height: 200px;
+            background-color: #c4c4c4;
+            border: 1px solid black;
+            margin-bottom: 15px;
+            display: flex;
+
+        }
+
+        .flex-item7{
+            color: white;
+            background-color: olivedrab;
+            flex-grow: 1;
+        }
+
+        .flex-item7:nth-child(2n){
+            background-color: darkmagenta;
+            flex-grow: 2;
+        }
+
+        /*flex-shrink 속성*/
+        .flex-container8{
+            width: 300px;
+            height: 200px;
+            background-color: #c4c4c4;
+            border: 1px solid black;
+            margin-bottom: 15px;
+            display: flex;
+
+        }
+
+        .flex-item8{
+            color: white;
+            background-color: olivedrab;
+            flex-shrink: 1;
+        }
+
+        .flex-item8:nth-child(2n){
+            background-color: darkmagenta;
+            flex-shrink: 0;
+        }
+
+
+        /*flex-basis 속성*/
+        .flex-container9{
+            width: 300px;
+            height: 200px;
+            background-color: #c4c4c4;
+            border: 1px solid black;
+            margin-bottom: 15px;
+            display: flex;
+
+        }
+
+        .flex-item9{
+            color: white;
+            background-color: olivedrab;
+            flex-basis: 100px;
+        }
+
+        .flex-item9:nth-child(2n){
+            background-color: darkmagenta;
+            flex-basis: 20px;
+        }
+
+
+        /*align-self 속성*/
+        .flex-container10{
+            width: 300px;
+            height: 200px;
+            background-color: #c4c4c4;
+            border: 1px solid black;
+            margin-bottom: 15px;
+            display: flex;
+
+        }
+
+        .flex-item10{
+            color: white;
+        }
+
+        .flex-item10:nth-child(1){
+            background-color: red;
+            align-self: flex-start;
+        }
+        .flex-item10:nth-child(2){
+            background-color: orange;
+            align-self: flex-end;
+        }
+        .flex-item10:nth-child(3){
+            background-color: green;
+            align-self: center;
+        }
+        .flex-item10:nth-child(4){
+            background-color: blue;
+            align-self: baseline;
+        }
+        .flex-item10:nth-child(5){
+            background-color: purple;
+            align-self: stretch;
+        }
+
+        /*order 속성*/
+        .flex-container11{
+            width: 300px;
+            height: 200px;
+            background-color: #c4c4c4;
+            border: 1px solid black;
+            margin-bottom: 15px;
+            display: flex;
+
+        }
+
+        .flex-item11{
+            color: white;
+        }
+
+        .flex-item11:nth-child(1){
+            background-color: red;
+            order: 4;
+        }
+        .flex-item11:nth-child(2){
+            background-color: green;
+            order: -3;
+        }.flex-item11:nth-child(3){
+             background-color: blue;
+             order: 11;
+         }
+        .flex-item11:nth-child(4){
+            background-color: darkorchid;
+            order: 0;
+        }
+
+
     </style>
 </head>
 <body>
@@ -216,6 +358,44 @@
     <div class="flex-item6">item-2</div>
     <div class="flex-item6">item-3</div>
     <div class="flex-item6">item-4</div>
+</div>
+
+<div class="flex-container7">
+    <div class="flex-item7">grow1</div>
+    <div class="flex-item7">grow2</div>
+    <div class="flex-item7">grow3</div>
+    <div class="flex-item7">grow4</div>
+</div>
+
+<div class="flex-container8">
+    <div class="flex-item8">shrink1</div>
+    <div class="flex-item8">shrink2</div>
+    <div class="flex-item8">shrink3</div>
+    <div class="flex-item8">shrink4</div>
+</div>
+
+<div class="flex-container9">
+    <div class="flex-item9">basis1</div>
+    <div class="flex-item9">basis2</div>
+    <div class="flex-item9">basis3</div>
+    <div class="flex-item9">basis4</div>
+</div>
+
+
+<div class="flex-container10">
+    <div class="flex-item10">flex-start</div>
+    <div class="flex-item10">flex-end</div>
+    <div class="flex-item10">center</div>
+    <div class="flex-item10">baseline</div>
+    <div class="flex-item10">stretch</div>
+</div>
+
+<div class="flex-container11">
+    <div class="flex-item11">flex-item1</div>
+    <div class="flex-item11">flex-item2</div>
+    <div class="flex-item11">flex-item3</div>
+    <div class="flex-item11">flex-item4</div>
+
 </div>
 </body>
 </html>
