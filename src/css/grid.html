@@ -1,0 +1,376 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            margin-bottom: 10px;
+        }
+
+        .grid-item{
+            background-color: red;
+        }
+
+        .grid-item:nth-child(2n){
+            background-color: #bf5e5e;
+        }
+
+        /* display 속성*/
+        .grid-container1{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+        }
+
+        .grid-item1{
+            background-color: black;
+        }
+
+        .grid-item1:nth-child(2n){
+            background-color: orange;
+        }
+
+
+        /* display 속성*/
+        .grid-container1{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            margin-bottom: 10px;
+        }
+
+        .grid-item1{
+            background-color: black;
+        }
+
+        .grid-item1:nth-child(2n){
+            background-color: orange;
+        }
+
+        /* grid-template-(columns,rows) 속성*/
+        .grid-container2{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .grid-item2{
+            background-color: aqua;
+        }
+
+        .grid-item2:nth-child(2n){
+            background-color: coral;
+        }
+
+        /* fr : fraction (분배)*/
+        .grid-container3{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .grid-item3{
+            background-color: seagreen;
+        }
+
+        .grid-item3:nth-child(2n){
+            background-color: yellowgreen;
+        }
+
+
+        /* auto */
+        .grid-container4{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .grid-item4{
+            background-color: orchid;
+        }
+
+        .grid-item4:nth-child(2n){
+            background-color: turquoise;
+        }
+
+
+        /* repeat() 함수 */
+        .grid-container5{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .grid-item5{
+            background-color: firebrick;
+        }
+
+        .grid-item5:nth-child(2n){
+            background-color: mediumaquamarine;
+        }
+
+
+        /* minmax() 함수 */
+        .grid-container6{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: minmax(10px,100px) 60px;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+
+        }
+
+        .grid-item6{
+            background-color: lightslategrey;
+        }
+
+        .grid-item6:nth-child(2n){
+            background-color: navajowhite;
+        }
+
+        /* row-gap column-gap */
+        .grid-container7{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+            row-gap: 10px;
+            column-gap: 20px;
+
+        }
+
+        .grid-item7{
+            background-color: darkturquoise;
+        }
+
+        .grid-item7:nth-child(2n){
+            background-color: mediumvioletred;
+        }
+
+
+        /* align-items, align-self*/
+        .grid-container8{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+            row-gap: 10px;
+            column-gap: 20px;
+            /*align-items: center;*/
+        }
+
+
+        /*.grid-item8{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*.grid-item8:nth-child(2n){*/
+        /*    background-color: blue;*/
+        /*}*/
+
+
+        /* align-self 사용할 때 (align-items 사용할 경우 nth-child 1,2,3,4 주석처리)*/
+        .grid-item8:nth-child(1){
+            background-color: red;
+            align-self: stretch;
+        }
+        .grid-item8:nth-child(2){
+            background-color: greenyellow;
+            align-self: start;
+        }
+        .grid-item8:nth-child(3){
+            background-color: green;
+            align-self: end;
+        }
+        .grid-item8:nth-child(4){
+             background-color: blue;
+            align-self: center;
+         }
+
+
+        /* align-items, align-self*/
+        .grid-container9{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            color: white;
+            background-color: #c4c4c4;
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px;
+            margin-bottom: 10px;
+            row-gap: 10px;
+            column-gap: 20px;
+            /*justify-items: center;*/
+        }
+
+
+        /*.grid-item9{*/
+        /*    background-color: orangered;*/
+        /*}*/
+
+        /*.grid-item9:nth-child(2n){*/
+        /*    background-color: palevioletred;*/
+        /*}*/
+
+
+
+        /* justify-self 사용할 때 (justify-items 사용할 경우 nth-child 1,2,3,4 주석처리)*/
+        .grid-item9:nth-child(1){
+            background-color: red;
+            justify-self: stretch;
+        }
+        .grid-item9:nth-child(2){
+            background-color: greenyellow;
+            justify-self: start;
+        }
+        .grid-item9:nth-child(3){
+            background-color: green;
+            justify-self: end;
+        }
+        .grid-item9:nth-child(4){
+            background-color: blue;
+            justify-self: center;
+        }
+
+    </style>
+</head>
+<body>
+<div style="font-weight: bold; font-size: 20px">grid</div>
+<div class="grid-container">
+    <div class="grid-item">item-1</div>
+    <div class="grid-item">item-2</div>
+    <div class="grid-item">item-3</div>
+    <div class="grid-item">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">1. display 속성</div>
+<div class="grid-container1">
+    <div class="grid-item1">item-1</div>
+    <div class="grid-item1">item-2</div>
+    <div class="grid-item1">item-3</div>
+    <div class="grid-item1">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">2. grid-template-(rows,columns)</div>
+<div class="grid-container2">
+    <div class="grid-item2">item-1</div>
+    <div class="grid-item2">item-2</div>
+    <div class="grid-item2">item-3</div>
+    <div class="grid-item2">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">3. fr (분배함수)</div>
+<div class="grid-container3">
+    <div class="grid-item3">item-1</div>
+    <div class="grid-item3">item-2</div>
+    <div class="grid-item3">item-3</div>
+    <div class="grid-item3">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">4. auto</div>
+<div class="grid-container4">
+    <div class="grid-item4">item-1</div>
+    <div class="grid-item4">item-2</div>
+    <div class="grid-item4">item-3</div>
+    <div class="grid-item4">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">5. repeat()함수</div>
+<div class="grid-container5">
+    <div class="grid-item5">item-1</div>
+    <div class="grid-item5">item-2</div>
+    <div class="grid-item5">item-3</div>
+    <div class="grid-item5">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">6. minmax()함수</div>
+<div class="grid-container6">
+    <div class="grid-item6">item-1</div>
+    <div class="grid-item6">item-2</div>
+    <div class="grid-item6">item-3</div>
+    <div class="grid-item6">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">7. row-gap column-gap</div>
+<div class="grid-container7">
+    <div class="grid-item7">item-1</div>
+    <div class="grid-item7">item-2</div>
+    <div class="grid-item7">item-3</div>
+    <div class="grid-item7">item-4</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">8. align-items, align-self</div>
+<div class="grid-container8">
+    <div class="grid-item8">stretch</div>
+    <div class="grid-item8">start</div>
+    <div class="grid-item8">end</div>
+    <div class="grid-item8">center</div>
+</div>
+
+<div style="font-weight: bold; font-size: 20px">9. justify-items, justify-self</div>
+<div class="grid-container9">
+    <div class="grid-item9">stretch</div>
+    <div class="grid-item9">start</div>
+    <div class="grid-item9">end</div>
+    <div class="grid-item9">center</div>
+</div>
+</body>
+</html>
