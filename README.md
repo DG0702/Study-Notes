@@ -22,5 +22,8 @@
 - [CSS Flex(플렉스 박스)](https://velog.io/@dkzh506/Flex%ED%94%8C%EB%A0%89%EC%8A%A4-%EB%B0%95%EC%8A%A4)
 - [CSS Grid layout(그리드 레이아웃)](https://velog.io/@dkzh506/Grid-layout%EA%B7%B8%EB%A6%AC%EB%93%9C-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83)
 
+### 3. JavaScript
+
+- [JavaScript 기본 정리](https://velog.io/@dkzh506/JavaScript-%EA%B8%B0%EB%B3%B8-%EC%A0%95%EB%A6%AC)
 
 
