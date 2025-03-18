@@ -25,5 +25,7 @@
 ### 3. JavaScript
 
 - [JavaScript 기본 정리](https://velog.io/@dkzh506/JavaScript-%EA%B8%B0%EB%B3%B8-%EC%A0%95%EB%A6%AC)
-- [JavaScript 내용](https://velog.io/@dkzh506/posts?tag=JavaScript)
+- [JavaScript 프로그래밍 기본 (변수 자료형)](https://velog.io/@dkzh506/JavaScript-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B8%B0%EB%B3%B8-%EB%B3%80%EC%88%98-%EC%9E%90%EB%A3%8C%ED%98%95)
+- [JavaScript 연산자와 제어문](https://velog.io/@dkzh506/JavaScript-%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EC%A0%9C%EC%96%B4%EB%AC%B8)
+- [JavaScript 함수](https://velog.io/@dkzh506/JavaScript-%ED%95%A8%EC%88%98)
 
