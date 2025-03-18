@@ -25,5 +25,5 @@
 ### 3. JavaScript
 
 - [JavaScript 기본 정리](https://velog.io/@dkzh506/JavaScript-%EA%B8%B0%EB%B3%B8-%EC%A0%95%EB%A6%AC)
-- [JavaScript 내용] (https://velog.io/@dkzh506/posts?tag=JavaScript)
+- [JavaScript 내용](https://velog.io/@dkzh506/posts?tag=JavaScript)
 
